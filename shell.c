@@ -1,6 +1,6 @@
 #include "main.h"
 
-/* betty style doc */
+/* betty-style doc */
 unsigned int flag;
 
 /**
