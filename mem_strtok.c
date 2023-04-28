@@ -88,7 +88,7 @@ char *for_strtok(char *arr, const char *delim)
 	else
 	{
 		after[c] = '\0';
-		after= after + c + 1;
+		after = after + c + 1;
 		if (*after == '\0')
 			after = NULL;
 	}

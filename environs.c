@@ -37,7 +37,8 @@ void _freeEnv(char **en)
 {
 	unsigned int b = 0;
 
-	while (en[b] != NULL) {
+	while (en[b] != NULL)
+	{
 		free(en[b]);
 		b++;
 	}
