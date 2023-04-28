@@ -1,5 +1,8 @@
 #include "main.h"
 
+/* betty style doc */
+unsigned int flag;
+
 /**
  * for_sig - handles ^C signal interupt
  * @uuv: unused variable (required for signal function prototype)
@@ -8,7 +11,6 @@
  */
 static void for_sig(int uuv)
 {
-	unsigned int flag;
 	(void) uuv;
 	if (flag == 0)
 		_putstr("\n$ ");
@@ -26,7 +28,6 @@ static void for_sig(int uuv)
  */
 int main(int argc __attribute__((unused)), char **argv, char **environ)
 {
-	unsigned int flag;
 	size_t l = 0;
 	unsigned int _ispipe = 0, i;
 	env_t vars = {NULL, NULL, NULL, 0, NULL, 0, NULL};
