@@ -54,6 +54,7 @@ char *_strcp(char *str)
 int _strcmpr(char *s1, char *s2)
 {
 	int r = 0;
+
 	while (s1[r] == s2[r])
 	{
 		if (s1[r] == '\0')

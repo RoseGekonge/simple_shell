@@ -1,8 +1,5 @@
 #include "main.h"
 
-/* global variable for ^C handling */
-unsigned int flag;
-
 /**
  * for_sig - handles ^C signal interupt
  * @uuv: unused variable (required for signal function prototype)
@@ -11,6 +8,7 @@ unsigned int flag;
  */
 static void for_sig(int uuv)
 {
+	unsigned int flag;
 	(void) uuv;
 	if (flag == 0)
 		_putstr("\n$ ");
@@ -22,12 +20,13 @@ static void for_sig(int uuv)
  * main - main function for the shell
  * @argc: number of arguments passed to main
  * @argv: array of arguments passed to main
- * @environment: array of environment variables
+ * @environ: array of environment variables
  *
  * Return: 0 or exit status, or ?
  */
 int main(int argc __attribute__((unused)), char **argv, char **environ)
 {
+	unsigned int flag;
 	size_t l = 0;
 	unsigned int _ispipe = 0, i;
 	env_t vars = {NULL, NULL, NULL, 0, NULL, 0, NULL};

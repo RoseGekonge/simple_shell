@@ -11,9 +11,8 @@
 #include <limits.h>
 #include <signal.h>
 
-
 /**
- * struct variables - variables
+ * struct vars - variables
  * @av: command line arguments
  * @arr: buffer of command
  * @en: environment variables

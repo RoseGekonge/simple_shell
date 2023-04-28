@@ -111,7 +111,7 @@ void _ispath(env_t *r)
 		_exit_(r);
 }
 /**
- * execvecwd - executes the command in the current working directory
+ * _execvecwd - executes the command in the current working directory
  * @r: pointer to struct of variables
  *
  * Return: 0 on success, 1 on failure
